@@ -1,1 +1,237 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+.card-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+.card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.card img {
+    border-radius: 50%;
+}
+
+.card h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.card .title {
+    font-size: 18px;
+    color: #666;
+}
+
+.card p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.card button {
+    background-color: #009688;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+.footer-image{
+  height: 100px;
+  width: 90%;
+}
+
+
+
+
+
+.popup {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.4
+    );
+    display: none;
+}
+.popup-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888888;
+    width: 30%;
+    font-weight: bolder;
+}
+.popup-content button {
+    display: block;
+    margin: 0 auto;
+}
+.show {
+    display: block;
+}
+.popup-section{
+    border: #0056b3 2px solid;
+    height: 100%;
+    font-family: sans-serif;
+}
+.popup-section h2{
+    color: rebeccapurple;
+    padding: 10px;
+}
+.popup-section p{
+    padding: 10px;
+}
+@media(max-width:760px){
+    .popup-content {
+        background-color: white;
+        margin: 10% auto;
+        padding: 20px;
+        font-weight: bolder;
+        border: 1px solid #888888;
+        width: 70%;
+    }
+    .popup-content button {
+        display: block;
+        margin: 0 auto;
+    }
+    .show {
+        display: block;
+    }
+    .popup-section{
+        border: #0056b3 2px solid;
+        height: 100%;
+        font-family: sans-serif;
+    }
+    .popup-section h2{
+        color: rebeccapurple;
+        padding: 10px;
+    }
+    .popup-section p{
+        padding: 10px;
+    }
+
+
+    .branding{
+    display:flex; flex-direction:column; align-items:center;
+  }
+  .branding img.avatar{
+    float:left;
+    width:128px;
+    height:auto;
+    aspect-ratio: 1/1;
+    border-radius:50%;
+    object-fit:cover;
+    object-position:center;
+    margin:0 0 25px 0;
+  }
+  .branding h2{
+    text-align:center;
+    font-size:17px;
+    color:black;
+    margin:0 0 10px 0;
+  }
+  .branding p{
+    text-align:center;
+    font-size:14px; line-height:150%;
+    color:gray;
+    margin:0 0 20px 0;
+  }
+  .branding ul{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    list-style-type: none;
+    
+  }
+  .branding ul li{
+    float:left;
+    width: 50px;
+    max-width:260px;
+    padding:8px 8px;
+    text-align:center;
+    font-size:13px;
+    margin:5px 0;
+  }
+  .branding ul li a{
+    color:#000;
+    text-decoration: none;
+  }
+}
+
+
+
+
+
+
+.branding{
+    display:flex; flex-direction:column; align-items:center;
+  }
+  .branding h1{
+    text-align:center;
+    font-size:15px;
+    text-transform:uppercase;
+    color:royalblue;
+    margin:0 0 20px 0;
+  }
+  .branding img.avatar{
+    float:left;
+    width:128px;
+    height:auto;
+    aspect-ratio: 1/1;
+    border-radius:50%;
+    object-fit:cover;
+    object-position:center;
+    margin:0 0 25px 0;
+  }
+  .branding h2{
+    text-align:center;
+    font-size:17px;
+    color:black;
+    margin:0 0 10px 0;
+  }
+  .branding p{
+    text-align:center;
+    font-size:14px; line-height:150%;
+    color:gray;
+    margin:0 0 20px 0;
+  }
+  .branding ul{
+    float:left;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    list-style-type: none;
+  }
+  .branding ul li{
+    float:left;
+    width:100%;
+    max-width:260px;
+    padding:8px 8px;
+    border:1px solid royalblue;
+    border-radius:50px;
+    text-align:center;
+    font-size:13px;
+    color:royalblue;
+    margin:5px 0;
+  }
+  .branding ul li a{color:#000;}

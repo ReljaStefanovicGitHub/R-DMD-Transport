@@ -5,63 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="css/simple-lightbox.css">
+<link rel="stylesheet" href="fonts/fa/css/all.css">
 <link rel="stylesheet" href="/css/style.css">
-<style>
-  body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-.card-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.card {
-    width: 300px;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-    background-color: #f9f9f9;
-}
-
-.card img {
-    border-radius: 50%;
-}
-
-.card h1 {
-    font-size: 24px;
-    margin-top: 10px;
-}
-
-.card .title {
-    font-size: 18px;
-    color: #666;
-}
-
-.card p {
-    font-size: 16px;
-    margin-top: 5px;
-}
-
-.card button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.card button:hover {
-    background-color: #0056b3;
-}
-.footer-image{
-  height: 100px;
-  width: 90%;
-}
-</style>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
@@ -76,7 +27,8 @@
   <div class="w3-bar-block">
     <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>USLUGE</a> 
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>O NAMA</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>KONTAKT</a>
+    <a href="#gallery" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>GALERIJA</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>KONTAKT</a>
   </div>
 </nav>
 
@@ -84,7 +36,7 @@
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 
-<div class="w3-main" style="margin-left:300px">
+<div class="w3-main" style="margin-left:300px;">
 
 
   <header id="portfolio">
@@ -95,23 +47,23 @@
   </header>
   
 
-  <div class="w3-row-padding">
+  <div class="w3-row-padding" style="margin-top: 20px;">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/images/bager1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="/images/bager1.jpg"  style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Usluga</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/images/bager1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="/images/bager1.jpg"  style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Usluga</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="/images/bager1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="/images/bager1.jpg"  style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Usluga</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
@@ -120,23 +72,23 @@
   </div>
   
 
-  <div class="w3-row-padding">
+  <div class="w3-row-padding" style="margin-top: 20px;">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/images/bager1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="/images/bager1.jpg"  style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Usluga</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/images/bager1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="/images/bager1.jpg"  style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Usluga</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="/images/bager1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="/images/bager1.jpg"  style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Usluga</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
@@ -146,7 +98,7 @@
 
 
 
-  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="about">
     <h1><b>O nama</b></h1>
     <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
     
@@ -159,9 +111,32 @@
         <h1>Dusan Rašeta</h1>
         <p class="title">posao u kompaniji</p>
 
-        <p><button>Contact</button></p>
+        <p><button id="myButton">Contact</button></p>
+        <div id="myPopup" class="popup">
+          <div class="popup-content">
+              <h1 id="DusanRaseta">
+                  Dušan Rašeta
+              </h1>
+              <section class="popup-section">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum provident, distinctio, consequuntur alias, </p>
+                <div class="branding">
+                  <ul>
+                      <li><i class="fa-solid fa-phone"></i> Telefon: <a href="tel:+11234567890">063567170</a></li>
+                      <li><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:#">rdmdtrasport@gmail.com</a></li>
+                  </ul>
+                </div>
+              </section>
+              <button id="closePopup">
+                  Close
+              </button>
+          </div>
+      </div>
         </div>
 
+
+
+
+        
         <div class="card">
             <img src="/images/image3.jpg" alt="John" style="width:100%">
             <h1>Miloš Rašeta</h1>
@@ -175,15 +150,19 @@
             <img src="/images/image3.jpg" alt="John" style="width:100%">
             <h1>Dragan Rašeta</h1>
             <p class="title">posao u kompaniji</p>
-            <p><button>Contact</button></p>
+            <p><button id="contant-button">Contact</button></p>
         </div>
         
     </div>
+
+
+
+    
 <!-- Contact Modal -->
 <div id="contactModal" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeContactModal()">&times;</span>
-    <h2 id="modalName"></h2>
+    <h2 id="modalName">Modal test</h2>
     <p id="modalPosition"></p>
     <p id="modalPhone"></p>
   </div>
@@ -257,6 +236,30 @@ function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
 }
+myButton.addEventListener(
+    "click",
+    function () {
+        myPopup.classList.add("show");
+    }
+);
+closePopup.addEventListener(
+    "click",
+    function () {
+        myPopup.classList.remove(
+            "show"
+        );
+    }
+);
+window.addEventListener(
+    "click",
+    function (event) {
+        if (event.target == myPopup) {
+            myPopup.classList.remove(
+                "show"
+            );
+        }
+    }
+);
 </script>
 
 </body>
