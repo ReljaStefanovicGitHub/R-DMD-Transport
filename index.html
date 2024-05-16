@@ -13,6 +13,9 @@
 <link rel="stylesheet" href="css/simple-lightbox.css">
 <link rel="stylesheet" href="fonts/fa/css/all.css">
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/popup.css">
+<link rel="icon" href="r-dmd logo.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="r-dmd logo screen-logo.png">
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
@@ -111,7 +114,7 @@
         <h1>Dusan Rašeta</h1>
         <p class="title">posao u kompaniji</p>
 
-        <p><button id="myButton">Contact</button></p>
+        <p><button id="myButton">Kontaktiraj</button></p>
         <div id="myPopup" class="popup">
           <div class="popup-content">
               <h1 id="DusanRaseta">
@@ -121,7 +124,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum provident, distinctio, consequuntur alias, </p>
                 <div class="branding">
                   <ul>
-                      <li><i class="fa-solid fa-phone"></i> Telefon: <a href="tel:+11234567890">063567170</a></li>
+                      <li><i class="fa-solid fa-phone"></i> Telefon: <a href="tel:+11234567890">broj</a></li>
                       <li><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:#">rdmdtrasport@gmail.com</a></li>
                   </ul>
                 </div>
@@ -136,37 +139,79 @@
 
 
 
-        
         <div class="card">
-            <img src="/images/image3.jpg" alt="John" style="width:100%">
-            <h1>Miloš Rašeta</h1>
-            <p class="title">posao u kompaniji</p>
-
-
-            <p><button>Contact</button></p>
+          <img src="/images/image3.jpg" alt="John" style="width:100%">
+          <h1>Milos Rašeta</h1>
+          <p class="title">posao u kompaniji</p>
+  
+          <p><button id="myButton1">Kontaktiraj</button></p>
+          <div id="myPopup1" class="popup">
+            <div class="popup-content">
+                <h1 id="DusanRaseta">
+                    Milos Rašeta
+                </h1>
+                <section class="popup-section">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum provident, distinctio, consequuntur alias, </p>
+                  <div class="branding">
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i> Telefon: <a href="tel:+11234567890">broj</a></li>
+                        <li><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:#">rdmdtrasport@gmail.com</a></li>
+                    </ul>
+                  </div>
+                </section>
+                <button id="closePopup1">
+                    Close
+                </button>
+            </div>
         </div>
+          </div>
 
-        <div class="card">
+
+
+
+
+
+
+
+
+          <div class="card">
             <img src="/images/image3.jpg" alt="John" style="width:100%">
             <h1>Dragan Rašeta</h1>
             <p class="title">posao u kompaniji</p>
-            <p><button id="contant-button">Contact</button></p>
-        </div>
+    
+            <p><button id="myButton2">Kontaktiraj</button></p>
+            <div id="myPopup2" class="popup">
+              <div class="popup-content">
+                  <h1 id="DusanRaseta">
+                      Dragan Rašeta
+                  </h1>
+                  <section class="popup-section">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum provident, distinctio, consequuntur alias, </p>
+                    <div class="branding">
+                      <ul>
+                          <li><i class="fa-solid fa-phone"></i> Telefon: <a href="tel:+11234567890">broj</a></li>
+                          <li><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:#">rdmdtrasport@gmail.com</a></li>
+                      </ul>
+                    </div>
+                  </section>
+                  <button id="closePopup2">
+                      Close
+                  </button>
+              </div>
+          </div>
+            </div>
+        
+
+
+
         
     </div>
 
 
 
+
+
     
-<!-- Contact Modal -->
-<div id="contactModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeContactModal()">&times;</span>
-    <h2 id="modalName">Modal test</h2>
-    <p id="modalPosition"></p>
-    <p id="modalPhone"></p>
-  </div>
-</div>
 
 <div class="w3-container w3-padding-large w3-grey">
   <h4 id="contact"><b>Kontaktiraj nas</b></h4>
@@ -180,9 +225,10 @@
       <p>Kucura, Srbija</p>
     </div>
     <div class="w3-third w3-dark-grey">
-      <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
-      <p>+381 123 456 789</p>
+      <p><i class="fa-brands fa-facebook w3-xxlarge w3-text-light-grey"></i></p>
+      <p>facebook</p>
     </div>
+    
   </div>
 </div>
 
@@ -213,54 +259,7 @@
   </div>
 </footer>
 
-<script>
-// Modal functions
-function showContactModal(name, position, phone) {
-    document.getElementById("modalName").innerHTML = name;
-    document.getElementById("modalPosition").innerHTML = position;
-    document.getElementById("modalPhone").innerHTML = "Phone: " + phone;
-    document.getElementById("contactModal").style.display = "block";
-}
-
-function closeContactModal() {
-    document.getElementById("contactModal").style.display = "none";
-}
-
-// Sidebar functions
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-myButton.addEventListener(
-    "click",
-    function () {
-        myPopup.classList.add("show");
-    }
-);
-closePopup.addEventListener(
-    "click",
-    function () {
-        myPopup.classList.remove(
-            "show"
-        );
-    }
-);
-window.addEventListener(
-    "click",
-    function (event) {
-        if (event.target == myPopup) {
-            myPopup.classList.remove(
-                "show"
-            );
-        }
-    }
-);
-</script>
+<script src="main.js"></script>
 
 </body>
 </html>
