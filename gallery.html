@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>R-DMD Transport</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/simple-lightbox.css">
-    <link rel="stylesheet" href="fonts/fa/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.3/simple-lightbox.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/popup.css">
-    <link rel="icon" href="r-dmd logo.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="r-dmd logo screen-logo.png">
+    <link rel="icon" href="/icons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://live.staticflickr.com/65535/53727759974_43c7584c0e_s.jpg">
+    <style>
+        /* Media query for mobile view */
+        @media (max-width: 600px) {
+            .gallery {
+                margin-top: 10px; /* Adjust this value to make the gap smaller */
+            }
+        }
+    </style>
 </head>
 <body>
     <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
@@ -49,27 +55,32 @@
           </div>
         </header>
 
+        <div class="gallery">
+          <a href="https://live.staticflickr.com/65535/53728036560_eeaef3c916_b.jpg" class="card">
+            <img src="https://live.staticflickr.com/65535/53728036560_eeaef3c916_n.jpg" alt="Avatar" style="width:100%; border-radius: 0;">
+          </a>
+          <a href="https://live.staticflickr.com/65535/53728036560_eeaef3c916_b.jpg" class="card">
+            <img src="https://live.staticflickr.com/65535/53728036560_eeaef3c916_n.jpg" alt="Avatar" style="width:100%; border-radius: 0;">
+          </a>
+          <a href="https://live.staticflickr.com/65535/53728036560_eeaef3c916_b.jpg" class="card">
+            <img src="https://live.staticflickr.com/65535/53728036560_eeaef3c916_n.jpg" alt="Avatar" style="width:100%; border-radius: 0;">
+          </a>
+          <a href="https://live.staticflickr.com/65535/53728036560_eeaef3c916_b.jpg" class="card">
+            <img src="https://live.staticflickr.com/65535/53728036560_eeaef3c916_n.jpg" alt="Avatar" style="width:100%; border-radius: 0;">
+          </a>
+          <a href="https://live.staticflickr.com/65535/53728036560_eeaef3c916_b.jpg" class="card">
+            <img src="https://live.staticflickr.com/65535/53728036560_eeaef3c916_n.jpg" alt="Avatar" style="width:100%; border-radius: 0;">
+          </a>
+          <a href="https://live.staticflickr.com/65535/53728036560_eeaef3c916_b.jpg" class="card">
+            <img src="https://live.staticflickr.com/65535/53728036560_eeaef3c916_n.jpg" alt="Avatar" style="width:100%; border-radius: 0;">
+          </a>
+        </div>
 
-        <div class="card">
-            <img src="https://live.staticflickr.com/65535/53727710324_4d9c6c471b_m.jpg" alt="Avatar" style="width:100%">
-        </div>
-        <div class="card">
-            <img src="https://live.staticflickr.com/65535/53727710324_4d9c6c471b_m.jpg" alt="Avatar" style="width:100%">
-        </div>
-        <div class="card">
-            <img src="https://live.staticflickr.com/65535/53727710324_4d9c6c471b_m.jpg" alt="Avatar" style="width:100%">
-        </div>
-        <div class="card">
-            <img src="https://live.staticflickr.com/65535/53727710324_4d9c6c471b_m.jpg" alt="Avatar" style="width:100%">
-        </div>
-        <div class="card">
-            <img src="https://live.staticflickr.com/65535/53727710324_4d9c6c471b_m.jpg" alt="Avatar" style="width:100%">
-        </div>
-        <div class="card">
-            <img src="https://live.staticflickr.com/65535/53727710324_4d9c6c471b_m.jpg" alt="Avatar" style="width:100%">
-        </div>
-        
-
-        <script src="main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.3/simple-lightbox.min.js"></script>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+          });
+        </script>
 </body>
 </html>

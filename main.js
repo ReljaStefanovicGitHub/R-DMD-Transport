@@ -165,3 +165,9 @@ document.querySelectorAll('.popup .close').forEach(function(closeBtn) {
     this.closest('.popup').style.display = 'none';
   });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+  });
