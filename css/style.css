@@ -278,3 +278,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     padding: 2px 16px;
   }
 }
+
+
+.zoom {
+  transition: transform 0.2s; /* Animation */
+  cursor: pointer;
+}
+.zoomed {
+  transform: scale(1.5); /* (150% zoom - Increase if needed) */
+}
