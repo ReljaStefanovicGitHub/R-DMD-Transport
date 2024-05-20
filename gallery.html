@@ -93,12 +93,11 @@
             <a href="https://live.staticflickr.com/65535/53728763840_fd85b6f86b_w.jpg" class="picture photo">
                 <img src="https://live.staticflickr.com/65535/53728763840_fd85b6f86b_w.jpg" alt="Avatar">
             </a>
-            <!-- Add iframe for video -->
             <a href="https://drive.google.com/file/d/1AQaTVLWdraIdoBjFPRDK7K7hTRlARNrQ/preview" class="picture video">
                 <iframe src="https://drive.google.com/file/d/1AQaTVLWdraIdoBjFPRDK7K7hTRlARNrQ/preview" allow="fullscreen"></iframe>
             </a>
-            <a href="https://live.staticflickr.com/65535/53728763840_fd85b6f86b_w.jpg" class="picture photo">
-              <img src="https://live.staticflickr.com/65535/53728763840_fd85b6f86b_w.jpg" alt="Avatar">
+            <a href="https://live.staticflickr.com/65535/53734415844_31d8cc632c_n.jpg" class="picture photo">
+              <img src="https://live.staticflickr.com/65535/53734415844_31d8cc632c_n.jpg" alt="Avatar">
             </a>
             <a href="https://live.staticflickr.com/65535/53727415352_ebf7590cc8.jpg" class="picture photo">
               <img src="https://live.staticflickr.com/65535/53727415352_ebf7590cc8.jpg" alt="Avatar">
@@ -112,8 +111,8 @@
             <a href="https://live.staticflickr.com/65535/53728665594_81953d1dd5.jpg" class="picture photo">
               <img src="https://live.staticflickr.com/65535/53728665594_81953d1dd5.jpg" alt="Avatar">
             </a>
-            <a href="https://live.staticflickr.com/65535/53728665594_81953d1dd5.jpg" class="picture photo">
-              <img src="https://live.staticflickr.com/65535/53728665594_81953d1dd5.jpg" alt="Avatar">
+            <a href="https://live.staticflickr.com/65535/53734470065_5ab63292be_n.jpg" class="picture photo">
+              <img src="https://live.staticflickr.com/65535/53734470065_5ab63292be_n.jpg" alt="Avatar">
             </a>
             <a href="https://live.staticflickr.com/65535/53727415352_ebf7590cc8.jpg" class="picture photo">
               <img src="https://live.staticflickr.com/65535/53727415352_ebf7590cc8.jpg" alt="Avatar">
@@ -123,6 +122,9 @@
             </a>
             <a href="https://live.staticflickr.com/65535/53728665594_81953d1dd5.jpg" class="picture photo">
                 <img src="https://live.staticflickr.com/65535/53728665594_81953d1dd5.jpg" alt="Avatar">
+            </a>
+            <a href="https://drive.google.com/file/d/1abtFsBM220MtcOuGMdsoGigVOcLwI4IX/preview" class="picture video">
+              <iframe src="https://drive.google.com/file/d/1abtFsBM220MtcOuGMdsoGigVOcLwI4IX/preview" width="640" height="480" allow="fullscreen" id="video1"></iframe>
             </a>
         </div>
 
@@ -146,6 +148,26 @@
                 }
             });
             }
+            document.addEventListener("fullscreenchange", function () {
+            var video = document.getElementById("video1");
+            if (!document.fullscreenElement) {
+                video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+            }
+        });
+
+        document.addEventListener("webkitfullscreenchange", function () {
+            var video = document.getElementById("video1");
+            if (!document.webkitIsFullScreen) {
+                video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+            }
+        });
+
+        document.addEventListener("mozfullscreenchange", function () {
+            var video = document.getElementById("video1");
+            if (!document.mozFullScreen) {
+                video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+            }
+        });
         </script>
 </body>
 </html>
