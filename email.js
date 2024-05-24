@@ -14,8 +14,18 @@
 
      emailjs.send('service_ka403lu', 'template_20idsgk', templateParams) // Replace with your actual Service ID and Template ID
          .then(function(response) {
-            console.log('SUCCESS!', response.status, response.text);
+            swal({
+                title: "Good job!",
+                text: "Email je uspešno poslat",
+                icon: "success",
+                button: "Nastavi",
+            });
          }, function(error) {
-            console.log('FAILED...', error);
+            swal({
+                title: "Error!",
+                text: "Greška pri slanju email-a",
+                icon: "success",
+                button: "Pokušaj opet",
+            });
          });
  }
