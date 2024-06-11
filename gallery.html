@@ -121,6 +121,8 @@
                     item.style.display = 'block';
                 } else if (type === 'videos' && item.classList.contains('video')) {
                     item.style.display = 'block';
+                    item.autoplay = false;
+                    item.load();
                 } else {
                     item.style.display = 'none';
                 }
@@ -145,6 +147,11 @@
             if (!document.mozFullScreen) {
                 video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
             }
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+        var video = document.contains.classList("video");
+            video.autoplay = false;
+            video.load();
         });
         </script>
         <script src="main.js"></script>
