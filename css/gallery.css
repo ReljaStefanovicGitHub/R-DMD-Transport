@@ -32,3 +32,34 @@
       max-width: 100%;
     }
   }
+  .gallery {
+    column-count: 4; /* Number of columns */
+    column-gap: 10px; /* Gap between columns */
+}
+
+.gallery a {
+    break-inside: avoid;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.gallery img, .gallery iframe {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    object-fit: cover; /* Ensures the media fills the container */
+}
+
+.gallery iframe {
+    height: auto; /* Ensures the iframe height adjusts automatically */
+    aspect-ratio: 16/9; /* Optional: sets a default aspect ratio */
+    border: none; /* Removes borders around the iframe */
+    display: block; /* Ensures iframe behaves like a block element */
+}
+
+/* Media query for mobile view */
+@media (max-width: 600px) {
+    .gallery {
+        column-count: 2; /* Number of columns for mobile */
+    }
+}
